@@ -7,7 +7,11 @@
 
     <style>
         .grid-container{
-
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: repeat(12,1fr);
+            gap: 5px;
+            height: 100vh;
         }
 
         .grid-item{
@@ -16,30 +20,41 @@
 
         .header{
             background-color: rgb(166, 182, 197);
+            grid-column: 1/13;
         }
 
         .nav{
             background-color: rgba(10, 186, 255, 0.578);
+            grid-row: 2/12;
+            grid-column: 1/4;
         }
 
         .title{
             background-color: rgb(255, 213, 135);
+            grid-column: 4/13;
         }
 
         .article1{
             background-color: rgb(116, 218, 116);
+            grid-column: 4/7;
+            grid-row: 3/12;
         }
 
         .article2{
             background-color: rgb(116, 218, 116);
+            grid-row: 3/12;
+            grid-column: 7/10;
         }
 
         .article3{
             background-color: rgb(116, 218, 116);
+            grid-row: 3/12;
+            grid-column: 10/13;
         }
 
         .footer{
             background-color: rgb(255, 84, 84);
+            grid-column: 1/13;
         }
     </style>
 
